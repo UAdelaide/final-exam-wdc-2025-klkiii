@@ -36,7 +36,8 @@ methods:{
         const distance = Math.sqrt(distX**2 + distY ** 2);
 
         if (distance < 100){
-            const offsetX = (math.random()-0.5) * 300;
+            const offsetX = (ath.random()-0.5) * 300;
+            const offsetY = 
         }
     }
 },
