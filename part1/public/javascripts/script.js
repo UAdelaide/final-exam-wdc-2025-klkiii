@@ -32,7 +32,8 @@ methods:{
     moveButtonIfClose(btn){
         const rect = btn.getBoundingClientRect();
         const distX = this.cursor.x - (rect.left+rect.width / 2);
-        const distY = this.cursor.y - (rect.top +rect.height / 2)
+        const distY = this.cursor.y - (rect.top +rect.height / 2);
+        const distance = Math.sqrt(distX**2)
     }
 },
 mounted(){
