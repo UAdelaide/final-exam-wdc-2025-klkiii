@@ -13,4 +13,4 @@ function ensureRole(role){
         next();
     };
 }
-module.exports = {ensureLoggedIn,}
+module.exports = {ensureLoggedIn,ensureRole};
