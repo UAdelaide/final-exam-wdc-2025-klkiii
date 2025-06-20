@@ -17,7 +17,7 @@ methods:{
         });
     },
     multiStepRefresh(){
-        if (confirm())
+        if (confirm("Are you sure you want to "))
     }
 }
 })
