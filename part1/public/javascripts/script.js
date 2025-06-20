@@ -16,6 +16,8 @@ methods:{
             this.dogImage = data.message;
         });
     },
-    m
+    multiStepRefresh(){
+        if (confirm())
+    }
 }
 })
