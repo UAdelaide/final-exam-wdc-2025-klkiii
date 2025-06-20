@@ -19,6 +19,6 @@ body {
 
 @keyframes flicker-img {
   0% {opacity: black;}
-  50% {background-color: white;}
-  100% {background-color: black;}
+  50% {opacity: white;}
+  100% {opacity: black;}
 }
