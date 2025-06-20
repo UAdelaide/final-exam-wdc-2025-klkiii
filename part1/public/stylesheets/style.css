@@ -1,7 +1,7 @@
 body {
  animation: flicker-bg 0.5s infinte;
  font-family: Arial, sans-serif;
- color: red ;
+ color: red;
  padding: 20px;
 }
 
