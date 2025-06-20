@@ -10,9 +10,7 @@ craeteApp({
 
 methods:{
     fetchDog(){
-        fetch("https://dog.ceo/api/breeds/image/random"
-        
-        )
+        fetch("https://dog.ceo/api/breeds/image/random")
     }
 }
 })
