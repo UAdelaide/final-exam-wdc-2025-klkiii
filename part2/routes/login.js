@@ -28,7 +28,7 @@ router.post('/login',async(req,res)=>{
         if (users[0].role === 'owner'){
             return res.redirect('/owner-dashboard.html');
         }
-        if (user[0].role === 'walker'){
+        if (users[0].role === 'walker'){
             return res.redirect('/walker-dashboard.html');
         }
         return res.status(403).send('Unknown role');
