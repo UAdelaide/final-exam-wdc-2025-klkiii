@@ -21,7 +21,9 @@ router.post('/login',async(req,res)=>{
             username: user[0].username,
             role: user[0].role
         };
-        
+
+        //redirect based on role
+        if ()
 
 
     }
