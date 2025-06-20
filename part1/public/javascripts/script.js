@@ -50,6 +50,6 @@ tarckMouse(e){
 mounted(){
     this.fetchDog();
     this.button = Array.from(document.querySelectorAll('.runaway'));
-    windo
+    window.addEventListener("mousemove")
 }
 }).mount('#app');
