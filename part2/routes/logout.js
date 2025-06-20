@@ -12,4 +12,4 @@ router.get('/logout',(req,res)=>{
     });
 });
 
-module.export = router;
+module.exports = router;
