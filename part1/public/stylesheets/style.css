@@ -6,7 +6,8 @@ body {
 
  display: flex;
  flex-dirsction: column;
- just
+ justify-content: center;
+ align-items: center;
 }
 
 @keyframes flicker-bg {
