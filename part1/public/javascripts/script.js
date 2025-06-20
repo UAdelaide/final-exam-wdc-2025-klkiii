@@ -27,5 +27,8 @@ methods:{
     confirmBooking(){
         alert("Booking confirmed!")
     }
+},
+mounted(){
+    this.fetch
 }
 })
