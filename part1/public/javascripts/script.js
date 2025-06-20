@@ -2,6 +2,7 @@ const { createApp } = Vue;
 
 craeteApp({
     data(){
-        DogImage
+        DogImage:'',
+        showBookingStep2
     }
 })
