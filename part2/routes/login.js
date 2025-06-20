@@ -11,7 +11,7 @@ router.post('/login',async(req,res)=>{
             'SELECT * FROM Users Where username = ? AND password_hash = ?',
             [username, password]
         );
-        if (user.length === 0){
+        if (users.length === 0){
             return res.status(401).send('Invalid credentials');
         }
 
