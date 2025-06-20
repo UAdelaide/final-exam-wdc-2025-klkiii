@@ -7,7 +7,10 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(session())
+app.use(session({
+    secret: 'pancakes@69',
+    resave
+}))
 
 //session
 app.use(express.urlencoded({extended:true}));
