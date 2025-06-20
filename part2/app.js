@@ -33,7 +33,7 @@ app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
 app.use('/',logoutRoute);
-app.use('/',logoutRoute);
+app.use('/',dogRoute);
 
 //get for the dashboard
 app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
