@@ -78,7 +78,8 @@
             //get photo
             const enrichedDogs = await Promise.all(data.map(async(dog)=>{
               const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
-              const imgDta
+              const imgData = await imgRes.json();
+              
             }
           ))
           }
