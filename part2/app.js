@@ -24,11 +24,13 @@ app.use(session({
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const loginRoutes = require('./routes/login');
-const logoutRoute = require('./')
+const logoutRoute = require('./routes/logout');
+
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
+app.use('/')
 
 //get for the dashboard
 app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
