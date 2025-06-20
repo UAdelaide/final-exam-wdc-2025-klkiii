@@ -23,7 +23,9 @@ router.post('/login',async(req,res)=>{
         };
 
         //redirect based on role
-        if ()
+        if (user.role === 'owner'){
+            return res
+        }
 
 
     }
