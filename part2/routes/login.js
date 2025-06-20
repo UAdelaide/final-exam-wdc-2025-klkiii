@@ -17,15 +17,15 @@ router.post('/login',async(req,res)=>{
 
         //save session
         req.session.user = {
-            id: user[0].user_id,
-            username: user[0].username,
-            role: user[0].role
+            id: users[0].user_id,
+            username: users[0].username,
+            role: users[0].role
         };
 
-        console.log(user[0].role);
+        console.log(users[0].role);
 
         //redirect based on role
-        if (user[0].role === 'owner'){
+        if (users[0].role === 'owner'){
             return res.redirect('/owner-dashboard.html');
         }
         if (user[0].role === 'walker'){
