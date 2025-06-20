@@ -18,3 +18,7 @@ module.exports = (db) => {
        WHERE u.role = 'walker'
        GROUP BY u.user_id
      `);
+res.json(rows);
+   } catch (err) {
+     console.error(err);
+     res.status(500).json({ error: 'Failed to fetch walker summary' });
