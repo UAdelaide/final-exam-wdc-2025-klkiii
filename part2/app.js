@@ -27,6 +27,7 @@ const loginRoutes = require('./routes/login');
 const logoutRoute = require('./routes/logout');
 
 
+
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
