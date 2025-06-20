@@ -5,7 +5,7 @@ const session = require('express-session');
 
 const app = express();
 //auth middleware
-const {ensureLoggedIn, ensureRole} = require('/middleware/auth.js')
+const {ensureLoggedIn, ensureRole} = require('./middleware/auth.js')
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
