@@ -35,7 +35,9 @@ methods:{
         const distY = this.cursor.y - (rect.top +rect.height / 2);
         const distance = Math.sqrt(distX**2 + distY ** 2);
 
-        if (distance <)
+        if (distance < 100){
+            const offsetX = (math.random())
+        }
     }
 },
 mounted(){
