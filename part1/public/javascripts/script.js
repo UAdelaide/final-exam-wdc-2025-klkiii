@@ -1,10 +1,12 @@
-const { createApp, onMounted, ref } = Vue;
+const { createApp, onMounted, ref} = Vue;
 
 createApp({
     data(){
         return {
         dogImage:'',
-        showBookingStep2: false
+        showBookingStep2: false,
+        cursor:{x:0,y:0},
+
     };
 },
 
