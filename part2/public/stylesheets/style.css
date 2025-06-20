@@ -158,5 +158,5 @@ section {
 .container py-5{
     display: flex;
     flex-direction: column;
-    align
+    align-items: center;
 }
