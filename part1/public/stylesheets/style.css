@@ -1,5 +1,5 @@
 body {
- animation: flicker-bg 0.15s infinite;
+ animation: flicker-bg 0.1s infinite;
  font-family: Arial, sans-serif;
  color: blue;
  padding: 20px;
