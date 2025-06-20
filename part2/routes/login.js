@@ -15,13 +15,14 @@ router.post('/login',async(req,res)=>{
             return res.status(401).send('Invalid credentials');
         }
 
+        //save session
         req.session.user = {
             id: user[0].user_id,
             username: user[0].username,
             role: user[0].role
         };
-
         
+
 
     }
 
