@@ -144,7 +144,7 @@
             if (!res.ok) throw new Error('Failed to load new dogs');
             dogs.value = await res.json();
           }catch(err){
-            error.value = 'Could not '
+            error.value = 'Could not fetch dog list';
           }
         }
 
