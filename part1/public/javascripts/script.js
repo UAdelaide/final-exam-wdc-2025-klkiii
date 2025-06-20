@@ -43,7 +43,9 @@ methods:{
     }
 },
 tarckMouse(e){
-    
+    this.cursor.x = e.clientX;
+    this.cursor.y = e.clientY;
+            this.buttons.forEach(this.moveButtonIfClose);
 }
 mounted(){
     this.fetchDog();
