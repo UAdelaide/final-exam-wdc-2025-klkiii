@@ -120,11 +120,8 @@ async function main() {
   app.use('/api/walkrequests', walkRequestsRoute(db));
   app.use('/api/walkers', walkersRoute(db));
 
-  // Start server
-  app.listen(3000, () => console.log('Server running on port 3000'));
 }
 
-main().catch(console.error);
 
 
 app.use(logger('dev'));
