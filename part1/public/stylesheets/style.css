@@ -5,6 +5,10 @@ body {
  padding: 20px;
 }
 
+@keyframes flicker-bg {
+  0% {}
+}
+
 doggie {
   width: 300px;
   height: 300px;
