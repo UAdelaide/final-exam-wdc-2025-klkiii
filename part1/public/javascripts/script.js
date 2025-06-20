@@ -28,7 +28,8 @@ methods:{
     },
     confirmBooking(){
         alert("Booking confirmed!")
-    }
+    },
+    move
 },
 mounted(){
     this.fetchDog();
