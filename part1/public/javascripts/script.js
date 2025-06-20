@@ -25,7 +25,7 @@ methods:{
         this.showBookingStep2 = true;
     },
     confirmBooking(){
-        alera
+        alert("Booking confirmed!")
     }
 }
 })
