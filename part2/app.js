@@ -31,7 +31,7 @@ app.use('/',loginRoutes);
 
 //get for the dashboard
 app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'owner-dashboard.html'));
+  res.sendFile(path.join(__dirname, 'private', 'owner-dashboard.html'));
 });
 
 app.get('/walker-dashboard', ensureLoggedIn, ensureRole('walker'), (req, res) => {
