@@ -6,5 +6,5 @@ function ensureLoggedIn(req,res,next){
 }
 
 function ensureRole(role){
-    
+    return function(r)
 }
