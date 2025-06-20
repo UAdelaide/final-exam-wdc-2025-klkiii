@@ -22,7 +22,7 @@ router.post('/login',async(req,res)=>{
             role: users[0].role
         };
 
-        console.log(users[0].role);
+        // console.log(users[0].role);
 
         //redirect based on role
         if (users[0].role === 'owner'){
