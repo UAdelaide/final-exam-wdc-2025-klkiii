@@ -23,7 +23,7 @@ router.post('/login',async(req,res)=>{
         };
 
         //redirect based on role
-        if (user.role === 'owner'){
+        if (user[0].role === 'owner'){
             return res.redirect('/owner-dashboard.html');
         }
         else if (user[0].role === 'walker'){
