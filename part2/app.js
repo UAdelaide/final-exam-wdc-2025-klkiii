@@ -10,8 +10,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(session({
     secret: 'pancakes@69',
     resave: false,
-    saveUninitialized
-}))
+    saveUninitialized: false
+}));
 
 //session
 app.use(express.urlencoded({extended:true}));
