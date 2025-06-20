@@ -8,5 +8,6 @@ router.get('/dogs',async (req,res)=>{
         if (!ownerId) return res.status(401).send('Not logged in');
 
         const[dogs] = await db.query('SELECT dog_id,name,size FROM Dogs WHERE owner_id = ?',[ownerId]);
+        res.json(dogs);
     }
 })
