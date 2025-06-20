@@ -53,6 +53,6 @@ mounted(){
     window.addEventListener("mousemove", this.trackMouse);
 },
 beforeUnmount(){
-    window.removeEventlistner()
+    window.removeEventlistner("mousemove",this.trav)
 }
 }).mount('#app');
