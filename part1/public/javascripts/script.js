@@ -30,7 +30,7 @@ methods:{
         alert("Booking confirmed!")
     },
     moveButtonIfClose(btn){
-        const rect = btm.get
+        const rect = btm.getBoundingClientRect();
     }
 },
 mounted(){
