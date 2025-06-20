@@ -35,7 +35,7 @@ app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
 });
 
 app.get('/walker-dashboard', ensureLoggedIn, ensureRole('walker'), (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'walker-dashboard.html'));
+  res.sendFile(path.join(__dirname, 'private', 'walker-dashboard.html'));
 });
 
 // Export the app instead of listening here
