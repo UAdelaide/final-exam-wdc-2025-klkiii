@@ -10,7 +10,8 @@ body {
  align-items: center;
 
  min-height : 100vh;
- mar
+ margin: 0;
+ text-align: center;
 }
 
 @keyframes flicker-bg {
