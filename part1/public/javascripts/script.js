@@ -1,4 +1,4 @@
-const { createApp } = Vue;
+const { createApp, onMounted, ref } = Vue;
 
 createApp({
     data(){
