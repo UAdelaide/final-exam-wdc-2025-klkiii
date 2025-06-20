@@ -39,6 +39,7 @@ methods:{
             const offsetX = (Math.random()-0.5) * 300;
             const offsetY = (Math.random() - 0.5) *300;
             btn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            btn.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${Math.random() * 360}deg)`;
         }
     }
 },
@@ -46,6 +47,7 @@ tarckMouse(e){
     this.cursor.x = e.clientX;
     this.cursor.y = e.clientY;
     this.buttons.forEach(this.moveButtonIfClose);
+
 },
 mounted(){
     this.fetchDog();
