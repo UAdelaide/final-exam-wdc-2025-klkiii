@@ -3,6 +3,8 @@ const router = express.Router();
 
 router.get('/logout',(req,res)=>{
     req.session.destroy(err=>{
-        if
+        if (err) {
+
+        }
     })
 })
