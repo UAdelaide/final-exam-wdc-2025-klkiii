@@ -36,7 +36,7 @@ router.get('/me', (req, res) => {
 });
 
 
-//did
+//didnt use this pls reffer to login.js file in routes 
 // POST login (dummy version)
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
