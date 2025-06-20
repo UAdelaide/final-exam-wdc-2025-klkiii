@@ -31,4 +31,4 @@ methods:{
 mounted(){
     this.fetchDog();
 }
-}).mount('#app')
+}).mount('#app');
