@@ -25,7 +25,7 @@ const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const loginRoutes = require('./routes/login');
 const logoutRoute = require('./routes/logout');
-const dogRoute = require('./routes/dog');
+const dogRoute = require('./routes/dogs');
 
 
 
