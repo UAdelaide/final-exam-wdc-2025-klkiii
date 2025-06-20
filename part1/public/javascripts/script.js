@@ -21,6 +21,8 @@ methods:{
             this.fetchDog();
         }
     },
-    
+    startBooking(){
+        this.showBookingStep2 = 
+    }
 }
 })
