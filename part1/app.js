@@ -12,7 +12,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 let db;
-async function main() {
+(async () =>  {
   // Step 1: Create the database if it doesn't exist
   const connection = await mysql.createConnection({
     host: 'localhost',
@@ -120,7 +120,7 @@ async function main() {
   app.use('/api/walkrequests', walkRequestsRoute(db));
   app.use('/api/walkers', walkersRoute(db));
 
-}
+})
 
 
 
