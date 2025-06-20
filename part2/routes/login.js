@@ -24,7 +24,7 @@ router.post('/login',async(req,res)=>{
 
         //redirect based on role
         if (user.role === 'owner'){
-            return res
+            return res.redirect('/ow')
         }
 
 
