@@ -90,7 +90,9 @@
             if (!res.ok) throw new Error('Failed to fetch current user');
             const data = await res.json();
             return data.id;
-          } catch
+          } catch(err){
+            error.value = 'Unable to fetch'
+          }
         }
 
         onMounted(() => {
