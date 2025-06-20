@@ -1,3 +1,3 @@
 function ensureLoggedIn(req,res,next){
-    if (!r)
+    if (!req.session.user)
 }
