@@ -91,7 +91,8 @@
             const data = await res.json();
             return data.id;
           } catch(err){
-            error.value = 'Unable to fetch'
+            error.value = 'Unable to fetch current users';
+            return null;
           }
         }
 
