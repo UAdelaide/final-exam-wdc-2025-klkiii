@@ -30,10 +30,10 @@ router.post('/login',async(req,res)=>{
             return res.redirect('/walker-dashboard.html');
         }
         else{
-            return res.status(403).send('Unknown role')
+            return res.status(403).send('Unknown role');
         }
 
 
-    }
+    } catch
 
 })
