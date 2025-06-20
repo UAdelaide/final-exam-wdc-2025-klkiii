@@ -6,7 +6,9 @@ router.post('/login',async(req,res)=>{
     const { username , password } = req.body;
 
     try{
-        const user = await db.
+        const user = await db.query(
+            'SELECT'
+        )
     }
 
 })
