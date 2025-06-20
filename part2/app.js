@@ -34,7 +34,7 @@ app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
 app.use('/',logoutRoute);
 app.use('/',dogRoute);
-app.use('/',dogRoute);
+app.use('/api',dogRoute);
 
 //get for the dashboard
 app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
