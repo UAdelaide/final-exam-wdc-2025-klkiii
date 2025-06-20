@@ -11,7 +11,7 @@ router.post('/login',async(req,res)=>{
             [username, password]
         );
         if (user.length === 0){
-            return res.status(401)
+            return res.status(401).send('')
         }
     }
 
