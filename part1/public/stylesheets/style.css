@@ -4,7 +4,9 @@ body {
  color: blue;
  padding: 20px;
 
- disp
+ display: flex;
+ flex-dirsction: column;
+ just
 }
 
 @keyframes flicker-bg {
