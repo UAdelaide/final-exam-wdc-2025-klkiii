@@ -4,3 +4,7 @@ function ensureLoggedIn(req,res,next){
     }
     next();
 }
+
+function ensureRole(role){
+    
+}
