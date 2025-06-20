@@ -49,6 +49,6 @@ tarckMouse(e){
 },
 mounted(){
     this.fetchDog();
-    this.button = Array
+    this.button = Array.from(document.querySelectorAll)
 }
 }).mount('#app');
