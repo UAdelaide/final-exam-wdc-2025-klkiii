@@ -7,7 +7,7 @@ router.post('/login',async(req,res)=>{
 
     try{
         //lookup user
-        const user = await db.query(
+        const [users] = await db.query(
             'SELECT * FROM Users Where username = ? AND password_hash = ?',
             [username, password]
         );
