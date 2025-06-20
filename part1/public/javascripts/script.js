@@ -42,7 +42,9 @@ methods:{
         }
     }
 },
-tarck
+tarckMouse(e){
+    
+}
 mounted(){
     this.fetchDog();
 }
