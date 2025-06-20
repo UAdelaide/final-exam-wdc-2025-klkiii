@@ -6,7 +6,7 @@ createApp({
         dogImage:'',
         showBookingStep2: false,
         cursor:{x:0,y:0},
-
+        buttons:[]
     };
 },
 
