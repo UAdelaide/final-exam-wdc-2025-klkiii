@@ -32,7 +32,7 @@
             <label class="form-label">Dog ID</label>
             <input v-model="form.dog_id" type="number" class="form-control" required>
           </div> -->
-          
+
           <!-- select dog my -->
           <div class="mb-3">
             <label class="form-label">Select Your Dog</label>
@@ -87,6 +87,7 @@
 
   <script>
     const { createApp, ref, onMounted } = Vue;
+    const dogs = ref([]);
 
     createApp({
       setup() {
@@ -134,6 +135,9 @@
             error.value = err.message;
             message.value = '';
           }
+        },
+        {
+          
         }
 
         onMounted(() => {
