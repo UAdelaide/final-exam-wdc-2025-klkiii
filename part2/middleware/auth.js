@@ -1,5 +1,6 @@
 function ensureLoggedIn(req,res,next){
     if (!req.session.user){
-        return res.redirect
+        return res.redirect('login.html');
     }
+    next();
 }
