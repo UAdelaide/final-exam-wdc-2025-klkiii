@@ -43,7 +43,8 @@ createApp({
         const offsetX = (Math.random() - 0.5) * 300;
         const offsetY = (Math.random() - 0.5) * 300;
         btn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-      }
+        btn.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${Math.random() * 360}deg)`;
+     }
     },
 
     trackMouse(e) {
