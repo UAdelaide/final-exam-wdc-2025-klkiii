@@ -15,7 +15,9 @@ router.post('/login',async(req,res)=>{
             return res.status(401).send('Invalid credentials');
         }
 
-        r
+        req.session.user = {
+            id: user[0]
+        }
 
     }
 
