@@ -22,7 +22,10 @@ methods:{
         }
     },
     startBooking(){
-        this.showBookingStep2 = 
+        this.showBookingStep2 = true;
+    },
+    confirmBooking(){
+        alera
     }
 }
 })
