@@ -31,7 +31,7 @@ const dogRoute = require('./routes/dogs');
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
-app.use('/',loginRoutes);
+// app.use('/',loginRoutes);
 app.use('/',logoutRoute);
 app.use('/',dogRoute);
 app.use('/api/dogs', require('./routes/dogs'));
