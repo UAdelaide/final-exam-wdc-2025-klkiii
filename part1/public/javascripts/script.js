@@ -49,6 +49,7 @@ tarckMouse(e){
 },
 mounted(){
     this.fetchDog();
-    this.button = Array.from(document.querySelectorAll)
+    this.button = Array.from(document.querySelectorAll('.runaway'));
+    windo
 }
 }).mount('#app');
