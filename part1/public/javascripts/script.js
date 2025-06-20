@@ -8,4 +8,9 @@ craeteApp({
     };
 },
 
+methods:{
+    fetchDog(){
+        
+    }
+}
 })
