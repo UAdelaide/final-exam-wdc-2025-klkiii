@@ -51,5 +51,6 @@ mounted(){
     this.fetchDog();
     this.button = Array.from(document.querySelectorAll('.runaway'));
     window.addEventListener("mousemove", this.trackMouse);
-}
+},
+beforer
 }).mount('#app');
