@@ -9,7 +9,8 @@ router.post('/login',async(req,res)=>{
         const user = await db.query(
             'SELECT * FROM users Where username = ? AND password = ?',
             [username, password]
-        )
+        );
+        
     }
 
 })
