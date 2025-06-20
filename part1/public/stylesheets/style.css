@@ -15,6 +15,7 @@ body {
   width: 300px;
   height: 300px;
   border: 2px solid black;
+  animation: flicker-img 0.1s infinite;
 }
 
 @keyframes flicker-img {
