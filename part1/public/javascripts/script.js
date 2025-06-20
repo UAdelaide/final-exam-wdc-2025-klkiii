@@ -29,7 +29,9 @@ methods:{
     confirmBooking(){
         alert("Booking confirmed!")
     },
-    move
+    moveButtonIfClose(btn){
+        const rect = btm.get
+    }
 },
 mounted(){
     this.fetchDog();
