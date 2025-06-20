@@ -10,11 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.use(session({
-    secret: 'pancakes@69',
-    resave: false,
-    saveUninitialized: false
-}));
+
 
 //session
 app.use(express.urlencoded({extended:true}));
