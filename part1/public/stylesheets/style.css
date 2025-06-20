@@ -17,8 +17,8 @@ body {
   border: 2px solid black;
 }
 
-@keyframes flicker-bg {
-  0% {background-color: black;}
+@keyframes flicker-img {
+  0% {opacity: black;}
   50% {background-color: white;}
   100% {background-color: black;}
 }
