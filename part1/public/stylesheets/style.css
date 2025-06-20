@@ -6,7 +6,8 @@ body {
 }
 
 @keyframes flicker-bg {
-  0% {}
+  0% {background-color: black;}
+  50% {background}
 }
 
 doggie {
