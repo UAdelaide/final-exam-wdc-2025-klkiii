@@ -3,7 +3,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const loginR
+
 
 // Middleware
 app.use(express.json());
@@ -20,6 +20,7 @@ app.use(express.urlencoded({extended:true}));
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
+const loginRoutes = require('./routes')
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
