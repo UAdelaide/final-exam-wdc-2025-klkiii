@@ -7,7 +7,8 @@ router.post('/login',async(req,res)=>{
 
     try{
         const user = await db.query(
-            'SELECT * FROM users Where username = ? AND password = ?'
+            'SELECT * FROM users Where username = ? AND password = ?',
+            [username, password]
         )
     }
 
