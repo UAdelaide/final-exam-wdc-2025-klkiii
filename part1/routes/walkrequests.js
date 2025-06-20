@@ -1,4 +1,3 @@
-// routes/walkrequests.js
 const express = require('express');
 
 module.exports = (db) => {
