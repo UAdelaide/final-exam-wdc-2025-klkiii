@@ -15,6 +15,7 @@ methods:{
         .then(data=>{
             this.dogImage = data.message;
         });
-    }
+    },
+    m
 }
 })
