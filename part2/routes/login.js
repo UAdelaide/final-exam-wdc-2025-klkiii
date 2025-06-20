@@ -10,7 +10,9 @@ router.post('/login',async(req,res)=>{
             'SELECT * FROM users Where username = ? AND password = ?',
             [username, password]
         );
-        
+        if (user.length === 0){
+            return res.status(401)
+        }
     }
 
 })
