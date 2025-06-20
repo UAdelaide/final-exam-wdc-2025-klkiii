@@ -21,7 +21,9 @@ router.post('/login',async(req,res)=>{
             username: user[0].username,
             role: user[0].role
         };
-        console.log(user[0])
+
+        console.log(user[0].role);
+
         //redirect based on role
         if (user[0].role === 'owner'){
             return res.redirect('/owner-dashboard.html');
