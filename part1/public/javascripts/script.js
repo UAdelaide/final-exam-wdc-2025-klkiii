@@ -38,7 +38,7 @@ methods:{
         if (distance < 100){
             const offsetX = (Math.random()-0.5) * 300;
             const offsetY = (Math.random() - 0.5) *300;
-            
+            btn.style.transform = ``
         }
     }
 },
