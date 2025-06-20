@@ -29,5 +29,14 @@ app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
 
+//get for the dashboard
+app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'owner-dashboard.html'));
+});
+
+app.get('/walker-dashboard', ensureLoggedIn, ensureRole('walker'), (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'walker-dashboard.html'));
+});
+
 // Export the app instead of listening here
 module.exports = app;
