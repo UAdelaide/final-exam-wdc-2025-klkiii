@@ -5,7 +5,7 @@ const session = require('express-session');
 
 const app = express();
 
-const {ensureLoggedIn,ensureRole}
+const {ensureLoggedIn, ensureRole} = require(/middleware)
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
