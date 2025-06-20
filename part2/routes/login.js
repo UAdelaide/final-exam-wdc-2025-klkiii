@@ -27,8 +27,9 @@ router.post('/login',async(req,res)=>{
             return res.redirect('/owner-dashboard.html');
         }
         else if (user[0].role === 'walker'){
-            return res.redirect('/walker-dashboard')
+            return res.redirect('/walker-dashboard.html');
         }
+        else
 
 
     }
