@@ -38,10 +38,11 @@ methods:{
         if (distance < 100){
             const offsetX = (Math.random()-0.5) * 300;
             const offsetY = (Math.random() - 0.5) *300;
-            btn.style.transform = ``
+            btn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
         }
     }
 },
+tarck
 mounted(){
     this.fetchDog();
 }
