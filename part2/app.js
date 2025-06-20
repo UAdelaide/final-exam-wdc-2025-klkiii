@@ -24,6 +24,7 @@ app.use(session({
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const loginRoutes = require('./routes/login');
+const logoutRoute = require('./')
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
