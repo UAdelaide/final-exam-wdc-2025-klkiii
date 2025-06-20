@@ -31,7 +31,7 @@ methods:{
     },
     moveButtonIfClose(btn){
         const rect = btn.getBoundingClientRect();
-        const distX = this.cursor.x - (rect)
+        const distX = this.cursor.x - (rect.left+rect.width / 2);
     }
 },
 mounted(){
