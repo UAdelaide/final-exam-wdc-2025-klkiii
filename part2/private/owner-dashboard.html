@@ -150,6 +150,7 @@
 
         onMounted(() => {
           loadWalks();
+          loadDogs();
         });
 
         return {
@@ -158,6 +159,7 @@
           message,
           error,
           submitWalkRequest
+          dogs
         };
       }
     }).mount('#app');
