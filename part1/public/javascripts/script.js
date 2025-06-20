@@ -20,6 +20,7 @@ methods:{
         if (confirm("Are you sure you want to relod the dog image?")){
             this.fetchDog();
         }
-    }
+    },
+    
 }
 })
