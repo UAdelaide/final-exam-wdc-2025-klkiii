@@ -1,6 +1,6 @@
 const { createApp } = Vue;
 
-craeteApp({
+createApp({
     data(){
         return {
         dogImage:'',
