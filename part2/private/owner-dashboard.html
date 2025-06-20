@@ -143,7 +143,9 @@
             const res = await fetch('/api/dogs');
             if (!res.ok) throw new Error('Failed to load new dogs');
             dogs.value = await res.json();
-          }catch
+          }catch(err){
+            error.value = 'Could not '
+          }
         }
 
         onMounted(() => {
