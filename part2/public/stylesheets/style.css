@@ -155,7 +155,7 @@ section {
     display: none;
 }
 
-
+/* center the login form */
 .container{
     min-height: 100vh;
     display: flex;
