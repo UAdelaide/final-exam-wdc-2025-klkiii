@@ -3,7 +3,7 @@ const { createApp } = Vue;
 craeteApp({
     data(){
         return {
-        DogImage:'',
+        dogImage:'',
         showBookingStep2: false
     };
 },
