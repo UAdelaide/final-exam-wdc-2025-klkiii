@@ -29,6 +29,6 @@ methods:{
     }
 },
 mounted(){
-    this.fetch
+    this.fetchDog();
 }
-})
+}).mount('#app')
