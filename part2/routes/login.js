@@ -4,6 +4,9 @@ const db = require('../models/db.js');
 
 router.post('/login',async(req,res)=>{
     const { username , password } = req.body;
-    
+
+    try{
+        const user = await db.
+    }
 
 })
