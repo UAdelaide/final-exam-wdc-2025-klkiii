@@ -1,14 +1,14 @@
 body {
  animation: flicker-bg 0.5s infinte;
  font-family: Arial, sans-serif;
- color: #cccccc;
+ color: red ;
  padding: 20px;
 }
 
 @keyframes flicker-bg {
   0% {background-color: black;}
   50% {background-color: white;}
-  100% {}
+  100% {background-color: black;}
 }
 
 doggie {
