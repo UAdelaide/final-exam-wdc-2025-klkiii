@@ -30,7 +30,7 @@ const logoutRoute = require('./routes/logout');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 app.use('/',loginRoutes);
-app.use('/')
+app.use('/',logoutRoute);
 
 //get for the dashboard
 app.get('/owner-dashboard', ensureLoggedIn, ensureRole('owner'), (req, res) => {
