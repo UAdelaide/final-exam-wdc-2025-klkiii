@@ -6,6 +6,7 @@ router.post('/login',async(req,res)=>{
     const { username , password } = req.body;
 
     try{
+        //lookup user
         const user = await db.query(
             'SELECT * FROM users Where username = ? AND password = ?',
             [username, password]
@@ -14,7 +15,8 @@ router.post('/login',async(req,res)=>{
             return res.status(401).send('Invalid credentials');
         }
 
-        
+        r
+
     }
 
 })
