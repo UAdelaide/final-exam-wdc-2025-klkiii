@@ -36,8 +36,7 @@ router.get('/me', (req, res) => {
 });
 
 
-//didnt use this pls reffer to login.js file in routes folder
-// i realised later that it exists
+
 // POST login (dummy version)
 router.post('/login',async(req,res)=>{
     const { username , password } = req.body;
