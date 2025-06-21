@@ -75,19 +75,22 @@
             const res = await fetch('/api/dogs');
             const data = await res.json();
 
-            //get photo
-            const enrichedDogs = await Promise.all(data.map(async(dog)=>{
-              try{
-              const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
-              const imgData = await imgRes.json();
-              return {...dog, photo: imgData.message};
-              }catch{
-                return {
-                  ...dog,
-                  photo: './images/No_Internet.png' // if the api fails
-                };
-              }
-            }
+            // Set the base dogs first without waiting for photos
+    dogs.value = data.map(dog => ({
+      ...dog,
+      photo: './images/No_Internet.png' // default photo
+    }));
+
+    // Try enriching with external photos, but don't block UI
+    data.forEach(async (dog, index) => {
+      try {
+        const imgRes = await fetch('https://dog.ceo/api/breeds/image/random');
+        const imgData = await imgRes.json();
+        dogs.value[index].photo = imgData.message;
+      } catch {
+        // fallback already set
+      }
+    });
           ));
           dogs.value = enrichedDogs;
           }catch (err){
