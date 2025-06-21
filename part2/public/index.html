@@ -82,7 +82,10 @@
               const imgData = await imgRes.json();
               return {...dog, photo: imgData.message};
               }catch{
-                return 
+                return {
+                  ...dog,
+                  photo:
+                }
               }
             }
           ));
